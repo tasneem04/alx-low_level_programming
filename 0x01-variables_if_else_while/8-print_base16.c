@@ -10,10 +10,13 @@
 
 int main(void)
 {
-char low;
+int d;
+char word;
 
-for( low = 'z'; low >= 'a'; low-- )
-putchar(low);
+for (d = '0'; d <= '9'; d++)
+putchar(d);
+for (word = 'a'; word <= 'f'; word++)
+putchar(word);
 putchar('\n');
 
 return (0);
