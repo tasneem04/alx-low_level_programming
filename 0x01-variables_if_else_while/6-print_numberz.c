@@ -10,11 +10,11 @@
 
 int main(void)
 {
-int i;
+	int d;
 
-for (i ='0'; i <= '9' ; i++)
-putchar(i);
-putchar("\n");
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
+	putchar('\n');
 
-return (0);
+	return (0);
 }
