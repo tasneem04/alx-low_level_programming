@@ -6,13 +6,13 @@
 
 /**
  * _abs - return the obolute value  
- *@c :number to be entered
- *@res :result
+ *@c:number to be entered
+ *@res:result
  */
 
 int _abs(int c)
 {
-int res ;
+int res;
 res = abs(c);
 return (res);
 }
