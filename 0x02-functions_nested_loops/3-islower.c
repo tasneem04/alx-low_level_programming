@@ -5,7 +5,8 @@
 #include "main.h"
 
 /**
-* _islower(int c) - check if lowercase
+* _islower - check if lowercase
+* @c : number input
 * Return: Always 0 (Success)
 */
 int _islower(int c)
