@@ -4,8 +4,9 @@
 #include <ctype.h>
 #include "main.h"
 /**
- *print_sign - check sign 
+ *print_sign-check sign 
  *@n:number
+ *@return of print_sign:return the value
  *@res:give the result
  */
 int print_sign(int n)
@@ -19,12 +20,12 @@ _putchar('+');
 else if (n == 0)
 {
 res = 0;
-_putchar ('0');     
+_putchar('0');     
 }
 else 
 {
 res = -1;
-_putchar ('-');
+_putchar('-');
 }
 return (res);
 }
