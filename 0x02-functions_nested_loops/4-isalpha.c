@@ -5,11 +5,10 @@
 #include "main.h"
 
 /**
-* _isalpha - check if c is alphabet 
+* _isalpha - check alphabet 
 *
 * 
 */
-
 int _isalpha(int c)
 {
 if (isalpha(c) != 0)
