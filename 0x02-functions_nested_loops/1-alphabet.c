@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * pint_alphabet - print from a to z in lower cases
+ * print_alphabet - print from a to z in lower cases
  *
  * Return: Always 0 (Success)
  */
