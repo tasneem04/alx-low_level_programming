@@ -4,14 +4,13 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * print_last_digit - print the last digit 
- *
+ *print_last_digit - print the last digit 
+ *Return :return the value of hours
  * 
  */
 int print_last_digit(int r)
 {
 int n;
-
 if (r < 0)
 n = -1 * (r % 10);
 else
