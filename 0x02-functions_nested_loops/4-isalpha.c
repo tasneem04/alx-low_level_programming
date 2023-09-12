@@ -5,8 +5,8 @@
 #include "main.h"
 
 /**
-* _isalpha - check alphabet
-* @c :input number 
+*_isalpha - check alphabet
+*@c:input number 
 */
 int _isalpha(int c)
 {
