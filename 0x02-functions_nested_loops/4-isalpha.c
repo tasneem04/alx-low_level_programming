@@ -5,9 +5,7 @@
 #include "main.h"
 
 /**
-* _isalpha - check alphabet 
-*
-* 
+* _isalpha(int c) - check alphabet 
 */
 int _isalpha(int c)
 {

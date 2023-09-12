@@ -5,11 +5,9 @@
 #include "main.h"
 
 /**
-* _islower - check if lowercase
-*
+* _islower(int c) - check if lowercase
 * Return: Always 0 (Success)
 */
-
 int _islower(int c)
 {
 if (islower(c) !=  0)
