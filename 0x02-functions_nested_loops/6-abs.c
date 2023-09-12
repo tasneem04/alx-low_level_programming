@@ -8,6 +8,7 @@
  * _abs - return the obolute value  
  *@c:number to be entered
  *@res:result
+ *Return: Absolut value of number res
  */
 
 int _abs(int c)
