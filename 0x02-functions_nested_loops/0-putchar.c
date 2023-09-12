@@ -1,8 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main(void) {
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
-    printf("_putchar\n");
+int main(void)
+{
 
-    return 0;
+printf("_putchar\n");
+
+return 0;
 }
