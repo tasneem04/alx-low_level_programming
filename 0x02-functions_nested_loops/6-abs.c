@@ -6,8 +6,8 @@
 
 /**
  * _abs - return the obolute value  
- *
- * 
+ *@c :number to be entered
+ *@res :result
  */
 
 int _abs(int c)

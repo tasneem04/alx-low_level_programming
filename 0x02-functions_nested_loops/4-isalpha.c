@@ -6,7 +6,7 @@
 
 /**
 * _isalpha - check alphabet
-* c : input number 
+* @c : input number 
 */
 int _isalpha(int c)
 {

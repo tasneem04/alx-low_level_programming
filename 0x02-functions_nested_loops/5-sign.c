@@ -5,8 +5,9 @@
 #include "main.h"
 
 /**
- * print_sign - check n sign 
- *
+ * print_sign - check sign 
+ *@n :number
+ @res :give the result
  */
 int print_sign(int n)
 {
@@ -15,13 +16,15 @@ if (n > 0)
 {
 res = 1;
 _putchar('+');
-}else if (n == 0)
+}
+else if (n == 0)
 {
 res = 0;
 _putchar ('0');     
-} else 
+}
+else 
 {
-res=-1;
+res =- 1;
 _putchar ('-');
 }
 return (res);
