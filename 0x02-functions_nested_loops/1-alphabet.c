@@ -3,24 +3,14 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * pint_alphabet - print from a to z in lower cases
  *
  * Return: Always 0 (Success)
  */
 
-void print_alphabet(void);
-
-int main(void)
-{
-
-print_alhabet(void);
-
-return (0);
-}
-
-void print_alphabet(void)
+void print_alphabet(void){
 char c;
-for (c='a' ;c<='z';c++){
+for (c='a' ; c<='z'; c++){
 _putchar(c);
 _putchar('\n');
 }
