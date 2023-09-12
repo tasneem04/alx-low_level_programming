@@ -6,7 +6,8 @@
 
 /**
 *_isalpha - check alphabet
-*@c:input number 
+*@c:input number
+*@return:return the value
 */
 int _isalpha(int c)
 {
