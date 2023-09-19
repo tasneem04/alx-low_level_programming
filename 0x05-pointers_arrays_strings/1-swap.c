@@ -4,6 +4,8 @@
  *swap_int -  a function that swaps the values of two integers.
  * @a:int
  * @b:int
+ * @swap1:int
+ * @swap2:int
  * Return - void
  */
 
