@@ -1,6 +1,7 @@
 #include "main.h"
+
 /*
- *_puts - function that return output 
+ * _puts - Write a function that prints a string, followed 
  *@str : pointer
  *Return void
  */
