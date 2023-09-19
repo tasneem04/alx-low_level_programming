@@ -3,10 +3,10 @@
 /*
  *_strlen - fucntion that shows the lenth of string
  *@s :char pointer
- *Return void
+ *Return int
  */
 
 int _strlen(char *s)
 {
-strlen(*s);
+return (strlen(*s));
 }
