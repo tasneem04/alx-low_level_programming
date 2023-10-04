@@ -2,40 +2,39 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * alloc_grid - A function that returns a pointer to a
- * 2 dimensional array of integers
- * @width: An input integer at number of columns
- * @height: An input integer at number of rows
- * Return: pointer to a 2D array, NULL on failure
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers.
+ * @width: width of array
+ * @height: height of array
+ *
+ * Return: a pointer to a 2 dimensional array of integers.
  */
-int **alloc_grid(int width, int height) {
-    if (width <= 0 || height <= 0) {
-        return NULL;  // Return NULL for invalid width or height
-    }
+int **alloc_grid(int width, int height)
+{
+	int **array, i, j;
+	int len = width * height;
 
-    int **grid = (int **)malloc(height * sizeof(int *));  // Allocate memory for rows
+	if (len <= 0)
+		return (NULL);
 
-    if (grid == NULL) {
-        return NULL;  // Return NULL if memory allocation fails
-    }
+	array = (int **)malloc(sizeof(int *) * height);
+	if (array == NULL)
+		return (NULL);
 
-    for (int i = 0; i < height; i++) {
-        grid[i] = (int *)malloc(width * sizeof(int));  // Allocate memory for columns
+	for (i = 0; i < height; i++)
+	{
+		array[i] = (int *)malloc(sizeof(int) * width);
+		if (array[i] == NULL)
+		{
+			for (i--; i >= 0; i--)
+				free(array[i]);
+			free(array);
+			return (NULL);
+		}
+	}
 
-        if (grid[i] == NULL) {
-            // Free previously allocated memory and return NULL if allocation fails
-            for (int j = 0; j < i; j++) {
-                free(grid[j]);
-            }
-            free(grid);
-            return NULL;
-        }
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			array[i][j] = 0;
 
-        for (int j = 0; j < width; j++) {
-            grid[i][j] = 0;  // Initialize elements to 0
-        }
-    }
-
-    return grid;  // Return a pointer to the allocated and initialized grid
+	return (array);
 }
-
