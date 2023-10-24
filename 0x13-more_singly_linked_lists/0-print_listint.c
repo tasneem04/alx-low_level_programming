@@ -1,4 +1,3 @@
-#include "lists.h"
 #include <stdio.h>
 #include "lists.h"
 /**
@@ -8,14 +7,11 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	unsigned int i = 0;
-	const listint_t *temp_h = h;
-
-	while (temp_h)
-	{
-		printf("%d\n", temp_h->n);
-		temp_h = temp_h->next;
-		i++;
-	}
-	return (i);
+    size_t count = 0;
+    while (h) {
+        printf("%d\n", h->n);
+        h = h->next;
+        count++;
+    }
+    return count;
 }
